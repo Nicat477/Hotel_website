@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  margin: 0 auto;
+  width: 1241px;
+  height: 39px;
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-top: 9px;
+  gap: 40px;
+  margin-right: 250px;
+}
+nav ul li {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 19.5px;
+  font-family: "Montserrat";
+}
+nav h1 {
+  font-size: 32px;
+  color: #3d97b4;
+  font-weight: 700;
+  line-height: 39.01px;
+}
+nav h1 span {
+  color: #ee685f;
+}
+nav .icons {
+  display: flex;
+  gap: 40px;
+}
+
+nav .icons img.first {
+  width: 12px;
+  height: 24px;
+}
+nav .icons img.second {
+  width: 27px;
+  height: 24px;
+}
+nav .icons img.third {
+  width: 32px;
+  height: 32px;
+}
+header .menu {
+  display: none;
+}
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .special .offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .places {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+header .main {
+  margin: 0 auto;
+  width: 1241px;
+  height: 500px;
+  background-image: url(../images/background_image.png);
+  background-position: center;
+  margin-top: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+}
+header .main .first {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58.51px;
+  color: #1a1a1a;
+  margin-left: 65px;
+}
+header .main .second {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #262729;
+  margin-left: 65px;
+}
+header .main .search {
+  width: 598px;
+  margin: auto;
+  margin-top: 180px;
+}
+
+.choose {
+  max-width: 100%;
+  min-height: 569px;
+  margin-top: 135px;
+  background-color: #f7f7f7;
+  padding-top: 70px;
+}
+.choose h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48.76px;
+  color: #1a1a1a;
+  text-align: center;
+}
+.choose pre {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat";
+  line-height: 28px;
+  color: #333333;
+  text-align: center;
+  margin-top: 26px;
+}
+.choose .advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 54px;
+  width: 1241px;
+  margin: auto;
+}
+.choose .advantages .adv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 19px;
+  margin-top: 54px;
+  height: 216px;
+  width: 286px;
+}
+.choose .advantages .adv img {
+  width: 100px;
+  height: 100px;
+}
+.choose .advantages .adv h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #262729;
+  text-align: center;
+}
+.choose .advantages .adv pre {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #262729;
+  text-align: center;
+  margin-top: 10px;
+}
+.special {
+  width: 1241px;
+  margin: auto;
+  margin-top: 100px;
+  height: 559px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.special h2 {
+  font-size: 40px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 48.76px;
+  text-align: center;
+  color: #262729;
+}
+.special .offers {
+  display: flex;
+  gap: 30px;
+}
+.special .offers img {
+  width: 392px;
+  height: 450px;
+}
+.reviews {
+  width: 1241px;
+  margin: auto;
+  margin-top: 132px;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.reviews h2 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48.76px;
+  color: #262729;
+}
+.reviews .review {
+  display: flex;
+  height: 301px;
+  align-items: center;
+  width: 100%;
+}
+.reviews .review .images {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+.reviews .review .each {
+  height: 301px;
+  width: 336px;
+}
+.reviews .review .each img {
+  object-fit: cover;
+}
+.reviews .review i {
+  height: 50px;
+  width: 53px;
+}
+.reviews button {
+  width: 291px;
+  text-align: center;
+  background-color: #ee685f;
+  height: 50px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  display: block;
+}
+.recent {
+  margin: auto;
+  margin-top: 100px;
+  width: 1241px;
+  height: 519px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.recent h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48.76px;
+  color: #262729;
+  text-align: center;
+}
+.recent .places {
+  display: flex;
+  gap: 27px;
+}
+.recent .places img {
+  height: 410px;
+  width: 392px;
+}
+footer {
+  background-color: #f3f2f0;
+  height: 320px;
+  margin-top: 100px;
+  padding-top: 60px;
+}
+footer .titles {
+  display: flex;
+  width: 1241px;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+footer .titles .title {
+  height: 131px;
+  width: 128px;
+}
+footer .titles .sub {
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .titles .sub h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+footer .titles .sub label {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: #262729;
+  margin-top: 15px;
+}
+footer .titles .sub .btn {
+  height: 40px;
+  display: flex;
+  gap: 0px;
+}
+input {
+  width: 356px;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #ee685f;
+}
+footer hr {
+  border: 1px solid #999999;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 1241px;
+}
+footer .under {
+  display: flex;
+  justify-content: space-between;
+  width: 1241px;
+  margin: auto;
+  align-items: center;
+}
+footer .under .logo {
+  font-size: 32px;
+  color: #3d97b4;
+  font-weight: 700;
+  line-height: 39.01px;
+}
+footer .under p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+footer .under p span {
+  color: #2a90d9;
+  text-decoration: underline;
+  font-weight: 600;
+}
+footer .under .logo span {
+  color: #ee685f;
+}
+@media (max-width: 767px) {
+  .special {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+  }
+
+  .special h2 {
+    font-size: 28px;
+    line-height: 34.13px;
+    margin-bottom: 40px;
+  }
+
+  .special .offers {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .special .offers img {
+    width: 100%;
+    height: auto;
+    max-width: 343px;
+    object-fit: cover;
+  }
+  .recent {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    margin-top: 60px;
+  }
+  .recent h2 {
+    font-size: 28px;
+    line-height: 34.13px;
+    margin-bottom: 40px;
+  }
+  .recent .places {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .choose {
+    padding: 60px 16px;
+    margin-top: 60px;
+  }
+
+  .choose h2 {
+    font-size: 28px;
+    line-height: 34.13px;
+  }
+
+  .choose pre {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    white-space: pre-wrap;
+  }
+
+  .choose .advantages {
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .choose .advantages .adv {
+    width: 100%;
+    max-width: 343px;
+    margin-top: 0;
+    height: auto;
+    gap: 16px;
+  }
+
+  .choose .advantages .adv h2 {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  .choose .advantages .adv pre {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0;
+  }
+
+  .reviews {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    margin-top: 60px;
+  }
+
+  .reviews h2 {
+    font-size: 28px;
+    line-height: 34.13px;
+    margin-bottom: 40px;
+  }
+
+  .reviews button {
+    width: 100%;
+    max-width: 343px;
+    margin-top: 40px;
+  }
+  .reviews i {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    margin-top: 60px;
+    padding: 60px 16px;
+  }
+  footer .titles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sub {
+    margin-top: 10px;
+  }
+  footer .under {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  header {
+    width: 100%;
+    height: auto;
+  }
+  header nav .menu {
+    display: block;
+    padding: 0 16px;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding: 0 10px;
+  }
+
+  header nav .first,
+  header nav .second {
+    display: none;
+  }
+  .nav_res {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul {
+    display: none;
+  }
+  header .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../images/background_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 334px;
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+  header .main .search{
+    margin-top: 40px;
+  }
+  header .main .first{
+    font-size: 30px;
+    line-height: 39.01px;
+    margin-left: 10px;
+  }
+  header .main .second{
+    font-size: 15px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  header .main .search{
+    display: flex;
+    justify-content: center;
+    width:95%;
+  }
+  header .main .search img {
+    width: 100%;
+    text-align: center; /* Make the image fill the search container */
+  }
+}
